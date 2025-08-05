@@ -1,0 +1,103 @@
+div#titulo {
+    background-color: blue;
+    height: 200px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid orange 5px;
+    border-radius: 30px;
+    color: orange;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+}
+
+div#titulo p {
+    color: rgb(255, 255, 255);
+}
+
+/* MENU */
+div#menu-partes {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#bot01, #bot02, #bot03 {
+    background-color: orange;
+    color: white;
+    width: 150px;
+    height: 40px;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+/* ITENS COM IMAGEM */
+.imgCano, .imgT, .imgJ, .imgregistro, .imgCaixaDeAgua, .imgcolar {
+    position: relative;
+    border: solid blue 3px;
+    margin-top: 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: cursive;
+    font-size: clamp(0.2rem, 1.5vw, 2rem);
+    padding: 10px;
+}
+
+@media (max-width: 900px) {
+    .imgCano, .imgT, .imgJ, .imgregistro, .imgCaixaDeAgua, .imgcolar { 
+    position: relative;
+    border: solid blue 3px;
+    margin-top: 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: cursive;
+    font-size: clamp(0.75rem, 0.1vw, 0.1rem);
+    padding: 10px;
+    }
+}
+
+/* TEXTOS */
+strong {
+    color: orange;
+}
+
+em {
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+}
+
+/* BOTÕES DE COMPRA */
+#botCano, #botT, #botJ, #botregistro, #botCaixaDeAgua, #botcolar {
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: blue;
+    border: solid orange;
+    color: white;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    transition: 0.3s;
+}
+
+/* BOTÕES - RESPONSIVO NO CELULAR */
+@media (max-width: 600px) {
+    #botCano, #botT, #botJ, #botregistro, #botCaixaDeAgua, #botcolar {
+        position: static;
+        width: 100%;
+        height: 45px;
+        display: block;
+        margin: 20px auto 0 auto;
+    }
+}
+
+/* FINAL */
+#final {
+    text-align: center;
+    background-color: blue;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    color: white;
+    padding: 10px;
+}
